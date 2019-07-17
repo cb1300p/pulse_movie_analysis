@@ -1,13 +1,13 @@
- import os
- import cv2
+import os
+import cv2
  
- movie_name = 'pulse_1'
- movie = './movie/'+movie_name+'.mp4'
+movie_name = 'pulse_1'
+movie = './movie/'+movie_name+'.mp4'
  
- count = 0
- cap = cv2.VideoCapture(movie)
+count = 0
+cap = cv2.VideoCapture(movie)
  
- while True:
+while True:
     ret, frame = cap.read()
     if ret == True:
         count += 1
